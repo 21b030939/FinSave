@@ -10,11 +10,6 @@ import com.example.finsave.databinding.FragmentProfilePageBinding
 import com.example.finsave.databinding.FragmentRecordPageBinding
 
 class RecordPageFragment : Fragment() {
-
-    private var _binding: FragmentRecordPageBinding? = null
-    private val binding
-        get() = _binding!!
-
     companion object{
         fun newInstance() = RecordPageFragment()
     }
@@ -23,8 +18,7 @@ class RecordPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentRecordPageBinding.inflate(inflater, container, false)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_record_page, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

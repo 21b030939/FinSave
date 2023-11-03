@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.finsave.R
 import com.example.finsave.databinding.FragmentProfilePageBinding
 
 class LoginRegPageFragment : Fragment() {
@@ -21,8 +22,7 @@ class LoginRegPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentProfilePageBinding.inflate(inflater, container, false)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_login_reg_page, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -10,10 +10,6 @@ import com.example.finsave.databinding.FragmentProfilePageBinding
 
 class ProfilePageFragment : Fragment() {
 
-    private var _binding: FragmentProfilePageBinding? = null
-    private val binding
-        get() = _binding!!
-
     companion object{
         fun newInstance() = ProfilePageFragment()
     }
@@ -22,8 +18,8 @@ class ProfilePageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentProfilePageBinding.inflate(inflater, container, false)
-        return binding.root
+
+        return inflater.inflate(R.layout.fragment_profile_page, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
