@@ -10,6 +10,11 @@ import com.example.finsave.databinding.FragmentAnalysisPageBinding
 import com.example.finsave.databinding.FragmentProfilePageBinding
 
 class AnalysisPageFragment : Fragment() {
+
+    private var _binding: FragmentAnalysisPageBinding? = null
+    private val binding
+        get() = _binding!!
+
     companion object{
         fun newInstance() = AnalysisPageFragment()
     }

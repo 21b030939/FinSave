@@ -60,7 +60,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="E-Mail:" />
+            android:layout_marginStart="4dp"
+            android:text="E-Mail:"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/user_email"
@@ -75,13 +77,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Birth Date:" />
+            android:text="Birth Date:"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/birth_date_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,12 +95,13 @@
 
         <Spinner
             android:id="@+id/spinner_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
 
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/logout_button"
         style="@style/ButtonRed"
         android:layout_width="match_parent"

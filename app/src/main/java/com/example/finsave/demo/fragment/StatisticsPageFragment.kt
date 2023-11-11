@@ -20,11 +20,15 @@ import com.github.mikephil.charting.utils.MPPointF
 
 
 class StatisticsPageFragment : Fragment() {
+
+    private var _binding: FragmentStatisticsPageBinding? = null
+    private val binding
+        get() = _binding!!
     companion object {
         fun newInstance() = StatisticsPageFragment()
     }
 
-    lateinit var pieChart: PieChart
+    private lateinit var pieChart: PieChart
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,7 +40,7 @@ class StatisticsPageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
 
-        /*pieChart = binding.pieChart
+        pieChart = binding.pieChart
 
         pieChart.setUsePercentValues(true)
         pieChart.getDescription().setEnabled(false)
@@ -95,7 +99,7 @@ class StatisticsPageFragment : Fragment() {
 
         pieChart.highlightValues(null)
 
-        pieChart.invalidate() */
+        pieChart.invalidate()
 
     }
 
