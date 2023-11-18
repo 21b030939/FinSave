@@ -6,5 +6,5 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="forgot_password">Forgot password?</string>
-    <string name="asking_login_details">Please, write here your account details:</string>
+    <string name="asking_login_details">Login to FinSave:</string>
 </resources>

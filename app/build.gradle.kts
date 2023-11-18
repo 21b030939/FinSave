@@ -77,6 +77,10 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
 
+    //for rxjava
+    implementation ("io.reactivex.rxjava2:rxjava:2.2.19")
+    implementation ("com.jakewharton.rxbinding2:rxbinding:2.0.0")
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

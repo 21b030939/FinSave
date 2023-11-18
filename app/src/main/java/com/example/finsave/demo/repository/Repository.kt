@@ -16,7 +16,7 @@ class Repository(private val spendingDao: SpendingDao) {
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
     suspend fun insert(spending:Spending){
-        spendingDao.insert()
+        spendingDao.insert(spending)
     }
 
 

@@ -96,16 +96,16 @@
             android:layout_marginEnd="4dp"
             android:background="@color/light_grey" />
 
-            <Button
-                android:id="@+id/record_button"
-                android:layout_width="200dp"
-                android:layout_height="56dp"
-                android:layout_marginTop="32dp"
-                android:layout_gravity="center"
-                android:text="Record"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:backgroundTint="@color/dark_blue"/>
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:text="Record"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/dark_blue"/>
 
     </LinearLayout>
 
