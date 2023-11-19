@@ -77,6 +77,11 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
 
+    //for lifecycle components
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion")
+    implementation ("androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion")
+
     //for rxjava
     implementation ("io.reactivex.rxjava2:rxjava:2.2.19")
     implementation ("com.jakewharton.rxbinding2:rxbinding:2.0.0")

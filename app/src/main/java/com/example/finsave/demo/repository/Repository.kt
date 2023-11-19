@@ -9,10 +9,6 @@ class Repository(private val spendingDao: SpendingDao) {
 
     val sortedByDateSpendings: Flow<List<Spending>> = spendingDao.getSortedByDateSpendings()
 
-    val sortedByCategorySpendings: Flow<List<Spending>> = spendingDao.getSortedByCategorySpendings()
-
-    val sortedByPriceSpendings: Flow<List<Spending>> = spendingDao.getSortedByPriceSpendings()
-
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
     suspend fun insert(spending:Spending){

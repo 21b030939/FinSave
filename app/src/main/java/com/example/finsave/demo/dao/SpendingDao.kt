@@ -28,3 +28,4 @@ interface SpendingDao {
     suspend fun deleteAll()
 
 }
+
