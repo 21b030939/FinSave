@@ -61,6 +61,7 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
 
     ksp("androidx.room:room-compiler:$roomVersion")
+
     //for card view
     implementation ("androidx.cardview:cardview:1.0.0")
 

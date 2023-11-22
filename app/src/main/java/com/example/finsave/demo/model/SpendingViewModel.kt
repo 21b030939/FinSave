@@ -1,11 +1,10 @@
-package com.example.finsave.demo
+package com.example.finsave.demo.model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.finsave.demo.dao.SpendingDao
 import com.example.finsave.demo.entity.Spending
 import com.example.finsave.demo.repository.Repository
 import kotlinx.coroutines.launch
