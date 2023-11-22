@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".demo.SpendingApplication"
         android:allowBackup="true"
@@ -21,7 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".demo.activity.MainActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".demo.activity.HomePageActivity"
             android:exported="true"

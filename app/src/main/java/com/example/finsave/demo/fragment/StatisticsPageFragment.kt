@@ -37,8 +37,9 @@ class StatisticsPageFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_statistics_page, container, false)
+    ): View {
+        _binding = FragmentStatisticsPageBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -47,7 +48,7 @@ class StatisticsPageFragment : Fragment() {
         val recyclerView = binding.categoriesRecyclerView
         val adapter = SpendingListAdapter()
         recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
     }
 
     override fun onResume() {

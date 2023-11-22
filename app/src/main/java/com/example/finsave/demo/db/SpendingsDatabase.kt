@@ -21,8 +21,7 @@ abstract class SpendingsDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: SpendingsDatabase? = null
 
-        fun getDatabase(context: Context,
-                        scope: CoroutineScope
+        fun getDatabase(context: Context
         ): SpendingsDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
@@ -43,7 +42,7 @@ abstract class SpendingsDatabase : RoomDatabase() {
             super.onCreate(db)
             INSTANCE?.let { database ->
                 scope.launch {
-                    pop
+                    populateDatabase(database.spendingDao())
                 }
             }
         }
@@ -51,8 +50,6 @@ abstract class SpendingsDatabase : RoomDatabase() {
         suspend fun populateDatabase(spendingDao: SpendingDao) {
             spendingDao.deleteAll()
 
-            var spending = Spending()
-            spendingDao.insert(spending)
         }
     }
 }
