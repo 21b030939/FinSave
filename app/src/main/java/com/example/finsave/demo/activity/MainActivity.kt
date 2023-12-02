@@ -114,6 +114,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+<<<<<<< HEAD
     override fun onStart() {
         super.onStart()
         if(auth.currentUser != null) {
@@ -124,4 +125,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+=======
+>>>>>>> d508524 ([problems with viewModel:((])
 }
