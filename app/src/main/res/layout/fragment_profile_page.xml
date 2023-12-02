@@ -48,7 +48,6 @@
                     android:text="Surname" />
 
                 <EditText
-                    android:text="abc"
                     android:id="@+id/user_surname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -82,7 +81,6 @@
             android:textColor="@color/black"/>
 
         <EditText
-            android:text="abc"
             android:id="@+id/birth_date_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,5 +100,13 @@
             android:layout_marginTop="8dp"/>
 
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/logout_button"
+        style="@style/ButtonRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Logout" />
 
 </LinearLayout>

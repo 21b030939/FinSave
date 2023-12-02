@@ -87,10 +87,10 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <Spinner
+        <EditText
             android:id="@+id/spending_value"
             android:layout_width="match_parent"
-            android:layout_height="28dp"
+            android:layout_height="32dp"
             android:layout_marginTop="8dp"
             android:layout_marginStart="4dp"
             android:layout_marginEnd="4dp"

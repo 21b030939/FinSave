@@ -11,20 +11,20 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="40dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginTop="8dp"
-        android:text="Categories:"
+        android:text="Spendings:"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categories_recycler_view"
+        android:id="@+id/spendings_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="4dp"
         android:padding="12dp"/>
     
 </LinearLayout>
