@@ -22,7 +22,7 @@ class StatisticsPageFragment : Fragment() {
 
     private var _binding: FragmentStatisticsPageBinding? = null
     private val viewModel: SpendingViewModel by viewModels {
-        SpendingViewModelFactory((application as SpendingApplication).repository)
+        SpendingViewModelFactory((requireActivity().application as SpendingApplication).repository)
     }
     private val binding
         get() = _binding!!
