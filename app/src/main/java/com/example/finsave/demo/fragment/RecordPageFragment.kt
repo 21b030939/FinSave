@@ -26,8 +26,7 @@ class RecordPageFragment : Fragment() {
 
     private var _binding: FragmentRecordPageBinding? = null
     private lateinit var viewModel: SpendingViewModel
-    private val binding
-        get() = _binding!!
+    private val binding get() = _binding!!
 
     companion object{
         fun newInstance() = RecordPageFragment()
@@ -37,13 +36,14 @@ class RecordPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_record_page, container, false)
+        _binding = FragmentRecordPageBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this,
-            SpendingViewModelFactory(SpendingApplication())
+            SpendingViewModelFactory((requireActivity().application as SpendingApplication).repository)
         ).get(SpendingViewModel::class.java)
 
         val editTextName = binding.spendingName

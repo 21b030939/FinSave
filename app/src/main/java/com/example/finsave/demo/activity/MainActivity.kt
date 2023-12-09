@@ -114,17 +114,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-<<<<<<< HEAD
     override fun onStart() {
         super.onStart()
-        if(auth.currentUser != null) {
-            Intent(this, MainActivity::class.java).also {
-                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(it)
-            }
-        }
-    }
 
-=======
->>>>>>> d508524 ([problems with viewModel:((])
+        /**
+         * fix
+         */
+
+//        if(auth.currentUser != null) {
+//            Intent(this, MainActivity::class.java).also {
+//                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+//                startActivity(it)
+//            }
+//        }
+    }
 }

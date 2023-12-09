@@ -101,7 +101,7 @@
 
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logout_button"
         style="@style/ButtonRed"
         android:layout_width="match_parent"

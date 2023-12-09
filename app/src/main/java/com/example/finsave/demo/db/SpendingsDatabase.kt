@@ -4,11 +4,11 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.finsave.demo.dao.SpendingDao
-import com.example.finsave.demo.entity.Spending
+import com.example.finsave.demo.model.db.SpendingConverter
+import com.example.finsave.demo.model.db.dao.SpendingDao
+import com.example.finsave.demo.model.db.entity.Spending
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -43,7 +43,7 @@ abstract class SpendingsDatabase : RoomDatabase() {
             super.onCreate(db)
             INSTANCE?.let { database ->
                 scope.launch {
-                    pop
+
                 }
             }
         }
@@ -51,8 +51,11 @@ abstract class SpendingsDatabase : RoomDatabase() {
         suspend fun populateDatabase(spendingDao: SpendingDao) {
             spendingDao.deleteAll()
 
-            var spending = Spending()
-            spendingDao.insert(spending)
+            /**
+             * todo: create spending object
+             */
+//            var spending = Spending()
+//            spendingDao.insert(spending)
         }
     }
 }
