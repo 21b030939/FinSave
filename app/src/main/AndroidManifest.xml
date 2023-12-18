@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
 
     <application
+        android:requestLegacyExternalStorage="true"
         android:enableOnBackInvokedCallback="true"
-        android:name=".SpendingApplication"
+        android:name=".data.model.db.SpendingApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,13 +19,13 @@
         android:theme="@style/Theme.FinSave"
         tools:targetApi="tiramisu">
         <activity
-            android:name=".demo.activity.RegPageActivity"
+            android:name=".ui.view.activity.RegPageActivity"
             android:exported="false" />
         <activity
-            android:name=".demo.activity.MainActivity"
+            android:name=".ui.view.activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".demo.activity.LoginPageActivity"
+            android:name=".ui.view.activity.LoginPageActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.FinSave">
@@ -34,5 +36,7 @@
             </intent-filter>
         </activity>
     </application>
+
+
 
 </manifest>

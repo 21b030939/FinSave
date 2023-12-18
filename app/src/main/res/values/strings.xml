@@ -8,4 +8,9 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="asking_login_details">Login to FinSave:</string>
     <string name="logout">Logout</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
 </resources>

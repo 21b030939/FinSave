@@ -8,7 +8,7 @@
     android:gravity="top"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".demo.activity.LoginPageActivity">
+    tools:context=".ui.view.activity.LoginPageActivity">
 
     <TextView
         android:layout_width="match_parent"

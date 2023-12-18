@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".demo.fragment.StatisticsPageFragment">
+    tools:context=".ui.view.fragment.StatisticsPageFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -20,10 +20,25 @@
         android:textSize="32sp"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/text_no_spendings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There is no any spendings. \n Go on Record Page to create new one."
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/spendings_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp"
+        android:visibility="visible"/>
     
 </LinearLayout>

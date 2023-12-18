@@ -21,8 +21,19 @@
             android:layout_marginStart="8dp"
             android:hint="name"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/stock_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="change"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -39,15 +50,6 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/stock_price_change"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:hint="change"
-            android:textSize="12sp"
-            android:textStyle="italic" />
 
     </LinearLayout>
 

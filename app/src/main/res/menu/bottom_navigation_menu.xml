@@ -11,11 +11,6 @@
         android:icon="@drawable/bottom_navigation_record"
         android:title="Record" />
     <item
-        android:id="@+id/analysis"
-        android:enabled="true"
-        android:icon="@drawable/bottom_navigation_analysis"
-        android:title="Analysis"/>
-    <item
         android:id="@+id/investment"
         android:enabled="true"
         android:icon="@drawable/bottom_navigation_investment"
