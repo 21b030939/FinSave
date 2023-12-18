@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId = "com.example.finsave"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -68,8 +68,8 @@ dependencies {
     ksp("androidx.room:room-compiler:$roomVersion")
 
     //for navigation components
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
     //for card view
     implementation("androidx.cardview:cardview:1.0.0")

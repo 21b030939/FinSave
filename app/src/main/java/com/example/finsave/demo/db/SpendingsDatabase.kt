@@ -50,12 +50,6 @@ abstract class SpendingsDatabase : RoomDatabase() {
 
         suspend fun populateDatabase(spendingDao: SpendingDao) {
             spendingDao.deleteAll()
-
-            /**
-             * todo: create spending object
-             */
-//            var spending = Spending()
-//            spendingDao.insert(spending)
         }
     }
 }

@@ -4,6 +4,7 @@
     android:layout_height="52dp"
     android:layout_marginBottom="8dp"
     android:background="@color/light_blue"
+    android:baselineAligned="false"
     android:orientation="horizontal"
     android:padding="4dp">
 
@@ -14,7 +15,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/spending_textview_name"
+            android:id="@+id/stock_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -22,16 +23,6 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/spending_textview_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-
-            android:hint="text"
-            android:textSize="12sp"
-            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -41,19 +32,20 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/spending_textview_cost"
+            android:id="@+id/stock_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="cost"
+            android:hint="price"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/spending_textview_value"
+            android:id="@+id/stock_price_change"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="value"
+            android:textColor="@color/black"
+            android:hint="change"
             android:textSize="12sp"
             android:textStyle="italic" />
 
