@@ -50,8 +50,8 @@ class RecordPageFragment : Fragment() {
                 val spending = Spending(
                     name = editTextName.text.toString(),
                     category = editTextCategory.text.toString(),
-                    price = editTextCost.text.toString(),
-                    value = editTextValue.text.toString()
+                    price = editTextCost.text.toString() + "tg",
+                    value = editTextValue.text.toString() + "%"
                 )
                 viewModel.insert(spending)
 

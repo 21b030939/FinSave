@@ -33,11 +33,13 @@
         <EditText
             android:id="@+id/spending_name"
             android:layout_width="match_parent"
-            android:layout_height="28dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
-            android:background="@color/light_grey" />
+            android:background="@color/light_grey"
+            android:paddingStart="8dp"
+            android:textSize="28sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -52,11 +54,13 @@
         <EditText
             android:id="@+id/spending_category"
             android:layout_width="match_parent"
-            android:layout_height="28dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
-            android:background="@color/light_grey" />
+            android:background="@color/light_grey"
+            android:paddingStart="8dp"
+            android:textSize="28sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -71,11 +75,13 @@
         <EditText
             android:id="@+id/spending_cost"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
-            android:background="@color/light_grey" />
+            android:background="@color/light_grey"
+            android:paddingStart="8dp"
+            android:textSize="28sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -90,40 +96,26 @@
         <EditText
             android:id="@+id/spending_value"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
-            android:background="@color/light_grey" />
+            android:background="@color/light_grey"
+            android:hint=" - - - %"
+            android:paddingStart="8dp"
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/record_button"
             android:layout_width="200dp"
             android:layout_height="56dp"
-            android:layout_marginTop="32dp"
             android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/dark_blue"
             android:text="Record"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            android:backgroundTint="@color/dark_blue"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:contentDescription="CAMERA_BUTTON"
-            app:srcCompat="@drawable/camera_icon"
-            app:tint="@color/white"
-            android:backgroundTint="@color/dark_blue"/>
-
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>
