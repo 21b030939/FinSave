@@ -11,4 +11,4 @@ My current goals:
         2)Learn more about Coroutines and how to use it(now simply understand what is it)
         3)Make better UI/UX
         4)Make my project updates more often to track my improvement
-I thinks that's all, anyway, thank you for you attention  /* and hope for good marks on final XDD */(need to delete this part after)
+I thinks that's all, anyway, thank you for you attention  /* and hope for good marks on final XDD */(need to delete this part after) 
