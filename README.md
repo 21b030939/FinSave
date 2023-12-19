@@ -1,5 +1,5 @@
-Hello, this is my FinSave app project. Here I learned how to make my app during Advanced-Android cource in KBTU.
-In my project i used several tools and architectures. Not sure if i made it all in best way, but at least i tried XD.
+Hello, this is my FinSave app project. Here I learned how to make my app during Advanced-Android cource in KBTU.<br />
+In my project i used several tools and architectures. Not sure if i made it all in best way, but at least i tried XD.<br />
 I used: 1)FireBase authentication
         2)Room Database
         3)Networks request using Retrofit2
